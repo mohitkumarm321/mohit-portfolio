@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mula Mohit Kumar | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
+        }
+        h1 { margin: 0; font-size: 2.5rem; color: var(--text-main); }
+        .subtitle { font-size: 1.2rem; color: var(--accent); margin: 5px 0 15px 0; font-weight: 500; }
+        .links a { color: var(--text-muted); text-decoration: none; margin-right: 15px; font-size: 0.95rem; transition: color 0.2s; }
+        .links a:hover { color: var(--accent); }
+        h2 { color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-top: 40px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 15px; }
+        .skill-card { background: var(--card-bg); padding: 15px; border-radius: 6px; border: 1px solid var(--border); }
+        .skill-card h3 { margin: 0 0 8px 0; font-size: 1rem; color: var(--text-main); }
+        .skill-card p { margin: 0; font-size: 0.9rem; color: var(--text-muted); }
+        .job, .project-card { margin-bottom: 25px; }
+        .job-header, .project-header { display: flex; justify-content: space-between; align-items: baseline; wrap: wrap; }
+        .job-title { font-weight: bold; font-size: 1.1rem; color: var(--text-main); }
+        .company { color: var(--accent); }
+        .date { color: var(--text-muted); font-size: 0.9rem; }
+        ul { padding-left: 20px; margin: 8px 0; color: var(--text-muted); font-size: 0.95rem; }
+        li { margin-bottom: 6px; }
+        .project-card { background: var(--card-bg); padding: 20px; border-radius: 8px; border: 1px solid var(--border); }
+        .project-title { font-weight: bold; font-size: 1.1rem; color: var(--text-main); margin-bottom: 5px; }
+        .tags { font-size: 0.85rem; color: var(--accent); font-family: monospace; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Mula Mohit Kumar</h1>
+        <div class="subtitle">Senior Site Reliability & Platform Engineer</div>
+        <div class="links">
+            <a href="#" target="_blank">🔗 LinkedIn</a>
+            <a href="#" target="_blank">💻 GitHub</a>
+            <a href="mailto:your.email@example.com">📧 Email</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>💡 About Me</h2>
+        <p style="color: var(--text-muted);">I am a Site Reliability Engineer with 6+ years of experience designing, automating, and scaling highly available, cloud-native infrastructure. My career spans engineering roles at global technology giants including IBM, Ericsson, and TCS. I specialize in treating infrastructure as code, architecting high-throughput distributed systems, and engineering self-healing platforms.</p>
+    </section>
+
+    <section>
+        <h2>🛠️ Technical Arsenal</h2>
+        <div class="grid">
+            <div class="skill-card">
+                <h3>Cloud & Infra</h3>
+                <p>IBM VPC, OpenStack, Hybrid Cloud</p>
+            </div>
+            <div class="skill-card">
+                <h3>Containers</h3>
+                <p>Kubernetes, Docker</p>
+            </div>
+            <div class="skill-card">
+                <h3>CI/CD & Automation</h3>
+                <p>Jenkins, Spinnaker, Git</p>
+            </div>
+            <div class="skill-card">
+                <h3>Data Streams</h3>
+                <p>Apache Kafka, Apache Cassandra</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>📈 Professional Journey</h2>
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title"><span class="company">IBM</span> | Site Reliability Engineer</span>
+                <span class="date">Aug 2025 – Present</span>
+            </div>
+            <ul>
+                <li>Manage and optimize large-scale enterprise infrastructure within the IBM VPC environment, ensuring high-availability SLAs.</li>
+                <li>Lead rapid mitigation efforts for critical platform incidents, conducting thorough root-cause analyses (RCA).</li>
+                <li>Formulate predictive alerting configurations using Prometheus and Grafana to resolve performance issues proactively.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title"><span class="company">Ericsson India Global Services</span> | Solution Integration Engineer</span>
+                <span class="date">2022 – 2025</span>
+            </div>
+            <ul>
+                <li>Architected and deployed highly resilient, active-active Apache Kafka and Cassandra platforms for telemetry data streams.</li>
+                <li>Built automated deployment frameworks utilizing Jenkins and Spinnaker, accelerating delivery cycles.</li>
+                <li>Managed multi-tenant Kubernetes clusters, focusing on resource optimization and network policies.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>🚀 Highlighted Projects</h2>
+        <div class="project-card">
+            <div class="project-title">High-Throughput Active-Active Kafka Platform</div>
+            <p style="color: var(--text-muted); margin: 5px 0;">Engineered a highly available active-active cluster topology across regions that guaranteed 99.99% uptime and zero data loss for enterprise telemetry.</p>
+            <div class="tags">Kafka, Cassandra, Kubernetes, Linux</div>
+        </div>
+        <div class="project-card">
+            <div class="project-title">Cloud-Native CI/CD Pipeline Transformation</div>
+            <p style="color: var(--text-muted); margin: 5px 0;">Modernized legacy deployment paths into automated cloud pipelines, orchestrating seamless rolling updates and automated rollbacks.</p>
+            <div class="tags">Jenkins, Spinnaker, Docker, Kubernetes</div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
